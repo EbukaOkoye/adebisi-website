@@ -64,6 +64,7 @@ function VideoModal({
       className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
       onClick={onClose}
     >
+      {/* Home About Section */}
       {/* Close button */}
       <button
         onClick={onClose}
