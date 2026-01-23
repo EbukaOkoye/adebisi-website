@@ -1098,12 +1098,17 @@ export const projects: Project[] = [
     client: "Education Platform",
     year: "2024",
     services: ["Course Design", "Interactive Elements", "LMS Integration"],
-    thumbnail: "/placeholder.svg?height=400&width=600",
-    images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+    thumbnail: "/placeholder.svg",
+     images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
     ],
+    // images: [
+    //   "/placeholder.svg?height=600&width=800",
+    //   "/placeholder.svg?height=600&width=800",
+    //   "/placeholder.svg?height=600&width=800",
+    // ],
     challenge:
       "Design an engaging online course that maintains learner attention, facilitates knowledge retention, and provides interactive learning experiences for a diverse audience of adult learners.",
     solution:

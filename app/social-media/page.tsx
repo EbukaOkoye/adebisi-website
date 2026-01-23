@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import Image from "next/image";
-import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link"
+import Image from "next/image"
+import { useState } from "react"
+import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 // Social media gallery images
 const socialMediaImages = [
@@ -77,32 +77,28 @@ const socialMediaImages = [
     src: "/images/dubai-ribdex.jpg",
     alt: "Ribdex - Travel to Dubai",
   },
-];
+]
 
 export default function SocialMediaGalleryPage() {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const openLightbox = (index: number) => {
-    setCurrentIndex(index);
-    setLightboxOpen(true);
-  };
+    setCurrentIndex(index)
+    setLightboxOpen(true)
+  }
 
   const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
+    setLightboxOpen(false)
+  }
 
   const goToPrevious = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? socialMediaImages.length - 1 : prev - 1
-    );
-  };
+    setCurrentIndex((prev) => (prev === 0 ? socialMediaImages.length - 1 : prev - 1))
+  }
 
   const goToNext = () => {
-    setCurrentIndex((prev) =>
-      prev === socialMediaImages.length - 1 ? 0 : prev + 1
-    );
-  };
+    setCurrentIndex((prev) => (prev === socialMediaImages.length - 1 ? 0 : prev + 1))
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -119,10 +115,7 @@ export default function SocialMediaGalleryPage() {
                 className="max-w-[160px]"
               />
             </Link>
-            <Link
-              href="/"
-              className="text-black-100 hover:text-primary transition-colors flex items-center gap-2"
-            >
+            <Link href="/" className="text-black-100 hover:text-primary transition-colors flex items-center gap-2">
               <i className="ri-arrow-left-line"></i>
               <span>Back to Categories</span>
             </Link>
@@ -133,12 +126,9 @@ export default function SocialMediaGalleryPage() {
       {/* Category Header */}
       <section className="py-12 lg:py-20">
         <div className="container">
-          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4">
-            Social Media
-          </h1>
+          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4">Social Media</h1>
           <p className="text-xl text-black-100">
-            {socialMediaImages.length}{" "}
-            {socialMediaImages.length === 1 ? "design" : "designs"}
+            {socialMediaImages.length} {socialMediaImages.length === 1 ? "design" : "designs"}
           </p>
         </div>
       </section>
@@ -221,5 +211,5 @@ export default function SocialMediaGalleryPage() {
         </div>
       )}
     </div>
-  );
+  )
 }

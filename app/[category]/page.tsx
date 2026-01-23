@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import { notFound } from "next/navigation";
-import { getProjectsByCategory } from "@/lib/projects-data";
+import Link from "next/link"
+import Image from "next/image"
+import { notFound } from "next/navigation"
+import { getProjectsByCategory } from "@/lib/projects-data"
 
 const categoryNames: Record<string, string> = {
   branding: "Branding",
@@ -12,18 +12,14 @@ const categoryNames: Record<string, string> = {
   photography: "Photography",
   "web-design": "Web Design",
   elearning: "eLearning Course Designs",
-};
+}
 
-export default function CategoryPage({
-  params,
-}: {
-  params: { category: string };
-}) {
-  const projects = getProjectsByCategory(params.category);
-  const categoryName = categoryNames[params.category];
+export default function CategoryPage({ params }: { params: { category: string } }) {
+  const projects = getProjectsByCategory(params.category)
+  const categoryName = categoryNames[params.category]
 
   if (!categoryName) {
-    notFound();
+    notFound()
   }
 
   return (
@@ -41,10 +37,7 @@ export default function CategoryPage({
                 className="max-w-[160px]"
               />
             </Link>
-            <Link
-              href="/"
-              className="text-black-100 hover:text-primary transition-colors flex items-center gap-2"
-            >
+            <Link href="/" className="text-black-100 hover:text-primary transition-colors flex items-center gap-2">
               <i className="ri-arrow-left-line"></i>
               <span>Back to Categories</span>
             </Link>
@@ -55,9 +48,7 @@ export default function CategoryPage({
       {/* Category Header */}
       <section className="py-12 lg:py-20">
         <div className="container">
-          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4">
-            {categoryName}
-          </h1>
+          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4">{categoryName}</h1>
           <p className="text-xl text-black-100">
             {projects.length} {projects.length === 1 ? "project" : "projects"}
           </p>
@@ -69,13 +60,8 @@ export default function CategoryPage({
         <div className="container">
           {projects.length === 0 ? (
             <div className="text-center py-20">
-              <p className="text-xl text-black-100">
-                No projects available in this category yet.
-              </p>
-              <Link
-                href="/"
-                className="inline-block mt-6 text-primary hover:underline"
-              >
+              <p className="text-xl text-black-100">No projects available in this category yet.</p>
+              <Link href="/" className="inline-block mt-6 text-primary hover:underline">
                 Browse other categories
               </Link>
             </div>
@@ -99,14 +85,8 @@ export default function CategoryPage({
                     <h3 className="text-xl font-semibold text-black-100 mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-base text-black-100 leading-relaxed line-clamp-2">
-                      {project.description}
-                    </p>
-                    {project.year && (
-                      <p className="text-sm text-black-100 mt-3 opacity-60">
-                        {project.year}
-                      </p>
-                    )}
+                    <p className="text-base text-black-100 leading-relaxed line-clamp-2">{project.description}</p>
+                    {project.year && <p className="text-sm text-black-100 mt-3 opacity-60">{project.year}</p>}
                   </div>
                 </Link>
               ))}
@@ -115,5 +95,5 @@ export default function CategoryPage({
         </div>
       </section>
     </div>
-  );
+  )
 }

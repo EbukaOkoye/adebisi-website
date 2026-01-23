@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Play, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { Play, X, ChevronLeft, ChevronRight } from "lucide-react"
 
 // Regular YouTube videos
 const videos = [
@@ -14,7 +14,7 @@ const videos = [
   { id: "yy6sTyzonEc", title: "Video 5" },
   { id: "oNdM45Nz6aE", title: "Video 6" },
   { id: "Bv2Aa5oGd18", title: "Video 7" },
-];
+]
 
 // YouTube Shorts
 const shorts = [
@@ -26,7 +26,7 @@ const shorts = [
   { id: "lYpVmeDZYJQ", title: "Short Animation 6" },
   { id: "4VyozJp0jPg", title: "Short Animation 7" },
   { id: "wXe9cRhUNws", title: "Short Animation 8" },
-];
+]
 
 function VideoModal({
   videoId,
@@ -37,34 +37,30 @@ function VideoModal({
   hasPrev,
   hasNext,
 }: {
-  videoId: string;
-  isShort: boolean;
-  onClose: () => void;
-  onPrev: () => void;
-  onNext: () => void;
-  hasPrev: boolean;
-  hasNext: boolean;
+  videoId: string
+  isShort: boolean
+  onClose: () => void
+  onPrev: () => void
+  onNext: () => void
+  hasPrev: boolean
+  hasNext: boolean
 }) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === "ArrowLeft" && hasPrev) onPrev();
-      if (e.key === "ArrowRight" && hasNext) onNext();
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", handleKeyDown);
+      if (e.key === "Escape") onClose()
+      if (e.key === "ArrowLeft" && hasPrev) onPrev()
+      if (e.key === "ArrowRight" && hasNext) onNext()
+    }
+    document.body.style.overflow = "hidden"
+    window.addEventListener("keydown", handleKeyDown)
     return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [onClose, onPrev, onNext, hasPrev, hasNext]);
+      document.body.style.overflow = ""
+      window.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [onClose, onPrev, onNext, hasPrev, hasNext])
 
   return (
-    <div
-      className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
-      onClick={onClose}
-    >
-      {/* Home About Section */}
+    <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center" onClick={onClose}>
       {/* Close button */}
       <button
         onClick={onClose}
@@ -77,8 +73,8 @@ function VideoModal({
       {hasPrev && (
         <button
           onClick={(e) => {
-            e.stopPropagation();
-            onPrev();
+            e.stopPropagation()
+            onPrev()
           }}
           className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/10 hover:bg-[#ff4f01] rounded-full flex items-center justify-center transition-colors"
         >
@@ -90,8 +86,8 @@ function VideoModal({
       {hasNext && (
         <button
           onClick={(e) => {
-            e.stopPropagation();
-            onNext();
+            e.stopPropagation()
+            onNext()
           }}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/10 hover:bg-[#ff4f01] rounded-full flex items-center justify-center transition-colors"
         >
@@ -101,16 +97,10 @@ function VideoModal({
 
       {/* Video container */}
       <div
-        className={`relative ${
-          isShort ? "w-[350px] max-w-[90vw]" : "w-full max-w-4xl mx-4"
-        }`}
+        className={`relative ${isShort ? "w-[350px] max-w-[90vw]" : "w-full max-w-4xl mx-4"}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div
-          className={`relative ${
-            isShort ? "aspect-[9/16]" : "aspect-video"
-          } bg-black rounded-lg overflow-hidden`}
-        >
+        <div className={`relative ${isShort ? "aspect-[9/16]" : "aspect-video"} bg-black rounded-lg overflow-hidden`}>
           <iframe
             src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
             title="Video Player"
@@ -121,51 +111,47 @@ function VideoModal({
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default function VideosMotionPage() {
-  const [modalVideo, setModalVideo] = useState<{
-    id: string;
-    index: number;
-    type: "video" | "short";
-  } | null>(null);
+  const [modalVideo, setModalVideo] = useState<{ id: string; index: number; type: "video" | "short" } | null>(null)
 
   const openVideoModal = (id: string, index: number) => {
-    setModalVideo({ id, index, type: "video" });
-  };
+    setModalVideo({ id, index, type: "video" })
+  }
 
   const openShortModal = (id: string, index: number) => {
-    setModalVideo({ id, index, type: "short" });
-  };
+    setModalVideo({ id, index, type: "short" })
+  }
 
   const closeModal = () => {
-    setModalVideo(null);
-  };
+    setModalVideo(null)
+  }
 
   const goToPrev = () => {
-    if (!modalVideo) return;
-    const list = modalVideo.type === "video" ? videos : shorts;
+    if (!modalVideo) return
+    const list = modalVideo.type === "video" ? videos : shorts
     if (modalVideo.index > 0) {
       setModalVideo({
         ...modalVideo,
         id: list[modalVideo.index - 1].id,
         index: modalVideo.index - 1,
-      });
+      })
     }
-  };
+  }
 
   const goToNext = () => {
-    if (!modalVideo) return;
-    const list = modalVideo.type === "video" ? videos : shorts;
+    if (!modalVideo) return
+    const list = modalVideo.type === "video" ? videos : shorts
     if (modalVideo.index < list.length - 1) {
       setModalVideo({
         ...modalVideo,
         id: list[modalVideo.index + 1].id,
         index: modalVideo.index + 1,
-      });
+      })
     }
-  };
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -182,10 +168,7 @@ export default function VideosMotionPage() {
                 className="max-w-[160px]"
               />
             </Link>
-            <Link
-              href="/"
-              className="text-black-100 hover:text-orange transition-colors flex items-center gap-2"
-            >
+            <Link href="/" className="text-black-100 hover:text-orange transition-colors flex items-center gap-2">
               <i className="ri-arrow-left-line"></i>
               <span>Back to Categories</span>
             </Link>
@@ -196,12 +179,9 @@ export default function VideosMotionPage() {
       {/* Category Header */}
       <section className="py-12 lg:py-20">
         <div className="container">
-          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4 font-bricolage">
-            Videos & Motion
-          </h1>
+          <h1 className="text-4xl lg:text-6xl font-semibold text-black-100 mb-4 font-bricolage">Videos & Motion</h1>
           <p className="text-xl text-black-100/70">
-            A collection of video productions and motion graphics showcasing
-            creative storytelling and visual effects.
+            A collection of video productions and motion graphics showcasing creative storytelling and visual effects.
           </p>
         </div>
       </section>
@@ -288,12 +268,9 @@ export default function VideosMotionPage() {
           onPrev={goToPrev}
           onNext={goToNext}
           hasPrev={modalVideo.index > 0}
-          hasNext={
-            modalVideo.index <
-            (modalVideo.type === "video" ? videos : shorts).length - 1
-          }
+          hasNext={modalVideo.index < (modalVideo.type === "video" ? videos : shorts).length - 1}
         />
       )}
     </div>
-  );
+  )
 }
