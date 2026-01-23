@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getProjectById, getProjectsByCategory } from "@/lib/projects-data";
+import logo3 from "@/public/images/design-mode/logo(3).png";
 
 const categoryNames: Record<string, string> = {
   branding: "Branding",
@@ -31,7 +32,7 @@ export default function ProjectDetailPage({
 
   const categoryProjects = getProjectsByCategory(params.category);
   const currentIndex = categoryProjects.findIndex(
-    (p) => p.id === params.project
+    (p) => p.id === params.project,
   );
   const prevProject =
     currentIndex > 0 ? categoryProjects[currentIndex - 1] : null;
@@ -50,7 +51,7 @@ export default function ProjectDetailPage({
           <div className="flex justify-between items-center">
             <Link href="/">
               <Image
-                src="/images/design-mode/logo(3).png"
+                src={logo3}
                 alt="debisi designs"
                 width={190}
                 height={48}

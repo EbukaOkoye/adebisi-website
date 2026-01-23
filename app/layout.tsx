@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
           rel="stylesheet"
         />
       </head>

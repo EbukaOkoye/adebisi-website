@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
 
 export default function HomePage() {
   const categories = [
@@ -51,7 +51,7 @@ export default function HomePage() {
       title: "eLearning Course Designs",
       description: "Articulate, Rise 36, LMS and lot more",
     },
-  ];
+  ]
 
   return (
     <div className="min-h-screen bg-background">
@@ -89,9 +89,7 @@ export default function HomePage() {
                   <h3 className="text-2xl font-semibold mb-3 text-black-100 group-hover:text-primary transition-colors">
                     {category.title}
                   </h3>
-                  <p className="text-base text-black-100 leading-relaxed">
-                    {category.description}
-                  </p>
+                  <p className="text-base text-black-100 leading-relaxed">{category.description}</p>
                 </div>
               </Link>
             ))}
@@ -99,5 +97,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  );
+  )
 }
