@@ -165,7 +165,9 @@ export default function ProjectDetailPage({
               <div className="mt-6 flex justify-center">
                 <a
                   href={project.pdfUrl}
-                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  // download
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors font-medium"
                 >
                   <i className="ri-download-line"></i>
