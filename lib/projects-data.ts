@@ -1,4 +1,4 @@
-import data from '@/lib/projects.json';
+import data from '@/lib/projects.json'
 
 export interface Project {
   id: string
@@ -366,8 +366,7 @@ export const projects: Project[] = data
 //     client: "Masaha Global",
 //     year: "2024",
 //     services: ["Brochure Design", "Product Catalog", "Print Layout", "Technical Specifications"],
-//     // thumbnail: "/masaha-rental-brochure-thumbnail.jpg",
-//     thumbnail: "/masha-print.png",
+//     thumbnail: "/masaha-rental-brochure-thumbnail.jpg",
 //     images: [
 //       "/masaha-rental-brochure-cover.jpg",
 //       "/masaha-rental-brochure-equipment.jpg",
@@ -384,7 +383,6 @@ export const projects: Project[] = data
 //       "Technical Details - Formatted specifications for clarity",
 //       "Print Production - Prepared files for professional printing",
 //     ],
-//     // pdfUrl: '/Masha-360-compressed.pdf', // Added for PDF link
 //     results:
 //       "The rental equipment brochure streamlined the client inquiry process and increased equipment rental bookings by providing clear, accessible information.",
 //     tools: ["Adobe InDesign", "Adobe Photoshop", "Adobe Illustrator"],
@@ -462,7 +460,7 @@ export const projects: Project[] = data
 //     client: "Al Waha Schools",
 //     year: "2024",
 //     services: ["Magazine Design", "Editorial Layout", "Educational Publishing", "Print Production"],
-//     thumbnail: "/Al-waha.jpeg",
+//     thumbnail: "/al-waha-magazine-thumbnail.jpg",
 //     images: ["/al-waha-magazine-cover.jpg", "/al-waha-magazine-spreads.jpg", "/al-waha-magazine-features.jpg"],
 //     challenge:
 //       "Design an engaging school magazine that showcases student achievements, school activities, and educational content while maintaining professional quality and visual appeal.",
@@ -494,8 +492,7 @@ export const projects: Project[] = data
 //     client: "Al-Masaha Al-Mushtarakah",
 //     year: "2024",
 //     services: ["Company Profile Design", "Corporate Design", "Layout Design", "Print Production"],
-//     // thumbnail: "/almasaha-mushtarakah-profile-thumbnail.jpg",
-//     thumbnail: "/msaha.png",
+//     thumbnail: "/almasaha-mushtarakah-profile-thumbnail.jpg",
 //     images: [
 //       "/almasaha-mushtarakah-profile-cover.jpg",
 //       "/almasaha-mushtarakah-profile-spreads.jpg",

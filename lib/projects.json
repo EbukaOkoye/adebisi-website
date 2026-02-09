@@ -354,7 +354,7 @@
       "Print Layout",
       "Technical Specifications"
     ],
-    "thumbnail": "/masha-print.png",
+    "thumbnail": "/masaha-rental-brochure-thumbnail.jpg",
     "images": [
       "/masaha-rental-brochure-cover.jpg",
       "/masaha-rental-brochure-equipment.jpg",
@@ -449,7 +449,7 @@
       "Educational Publishing",
       "Print Production"
     ],
-    "thumbnail": "/Al-waha.jpeg",
+    "thumbnail": "/al-waha-magazine-thumbnail.jpg",
     "images": [
       "/al-waha-magazine-cover.jpg",
       "/al-waha-magazine-spreads.jpg",
@@ -485,7 +485,7 @@
       "Layout Design",
       "Print Production"
     ],
-    "thumbnail": "/msaha.png",
+    "thumbnail": "/almasaha-mushtarakah-profile-thumbnail.jpg",
     "images": [
       "/almasaha-mushtarakah-profile-cover.jpg",
       "/almasaha-mushtarakah-profile-spreads.jpg",
@@ -774,8 +774,8 @@
     "thumbnail": "/abstract-motion-graphics.png",
     "images": [
       "/motion-graphics-storyboard.jpg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800"
     ],
     "challenge": "Create an engaging 60-second brand animation that captures the creative agency's innovative spirit and showcases their services in a memorable way for social media platforms.",
     "solution": "Developed a dynamic motion graphics video with smooth transitions, vibrant colors, and kinetic typography. Combined 2D and 3D elements to create visual interest while maintaining brand consistency throughout.",
@@ -802,8 +802,12 @@
     "client": "E-commerce Store",
     "year": "2024",
     "services": ["Product Photography", "Photo Editing", "Retouching"],
-    "thumbnail": "/placeholder.svg",
-    "images": ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    "thumbnail": "/placeholder.svg?height=400&width=600",
+    "images": [
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800",
+      "/placeholder.svg?height=600&width=800"
+    ],
     "challenge": "Create high-quality product photography that showcases e-commerce products in the best light, maintains consistency across the catalog, and drives conversions through professional presentation.",
     "solution": "Executed a professional photography session with controlled lighting, multiple angles, and lifestyle shots. Applied consistent editing and retouching to create a cohesive product catalog that elevates the brand's perceived value.",
     "process": [
