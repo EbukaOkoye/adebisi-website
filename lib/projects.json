@@ -282,12 +282,8 @@
       "Menu Design",
       "Cultural Branding"
     ],
-    "thumbnail": "/fateer-wa-teer-thumbnail.jpg",
-    "images": [
-      "/fateer-wa-teer-logo.jpg",
-      "/fateer-wa-teer-menu.jpg",
-      "/fateer-wa-teer-interior.jpg"
-    ],
+    "thumbnail": "/fateer-wa-wateer.png",
+    "images": ["/fateer-wa-wateer.png", "/fateer-menu.png", "/fateer-food.png"],
     "challenge": "Create an authentic Arabic restaurant brand identity that honors traditional Kuwaiti culinary culture while appealing to modern diners.",
     "solution": "Developed a culturally rich brand identity with Arabic calligraphy, traditional patterns, warm colors, and menu designs that celebrate Kuwaiti food heritage.",
     "process": [
@@ -449,7 +445,7 @@
       "Educational Publishing",
       "Print Production"
     ],
-    "thumbnail": "/al-waha-magazine-thumbnail.jpg",
+    "thumbnail": "/Al-waha.jpeg",
     "images": [
       "/al-waha-magazine-cover.jpg",
       "/al-waha-magazine-spreads.jpg",
@@ -485,7 +481,7 @@
       "Layout Design",
       "Print Production"
     ],
-    "thumbnail": "/almasaha-mushtarakah-profile-thumbnail.jpg",
+    "thumbnail": "/placeholder.svg",
     "images": [
       "/almasaha-mushtarakah-profile-cover.jpg",
       "/almasaha-mushtarakah-profile-spreads.jpg",
@@ -709,7 +705,7 @@
       "Resource Allocation",
       "Executive Reporting"
     ],
-    "thumbnail": "/almasaha-budget-thumbnail.jpg",
+    "thumbnail": "/Al-masaha-annual-budget.png",
     "images": [
       "/almasaha-budget-overview.jpg",
       "/almasaha-budget-allocation.jpg",
