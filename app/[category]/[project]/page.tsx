@@ -203,7 +203,7 @@ export default function ProjectDetailPage({
                 onClick={() => setSelectedImage(image)}
               >
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={image || "/adebisi-website/public/placeholder.svg"}
                   alt={`${project.title} - Image ${index + 1}`}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
