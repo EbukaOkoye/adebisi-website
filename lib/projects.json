@@ -353,8 +353,7 @@
     "thumbnail": "/masaha-rental-brochure-thumbnail.jpg",
     "images": [
       "/masaha-rental-brochure-cover.jpg",
-      "/masaha-rental-brochure-equipment.jpg",
-      "/masaha-rental-brochure-specs.jpg"
+      "/masaha-rental-brochure-equipment.jpg"
     ],
     "challenge": "Design an informative rental equipment brochure that clearly presents Masaha's extensive inventory while maintaining visual appeal and easy navigation for potential clients.",
     "solution": "Developed a well-organized brochure with clear equipment categories, detailed specifications, high-quality product images, and intuitive layout that helps clients quickly find the equipment they need.",
@@ -447,9 +446,9 @@
     ],
     "thumbnail": "/Al-waha.jpeg",
     "images": [
-      "/al-waha-magazine-cover.jpg",
-      "/al-waha-magazine-spreads.jpg",
-      "/al-waha-magazine-features.jpg"
+      "/al-waha-school-1.png",
+      "/al-waha-school-2.png",
+      "/al-waha-school-3.png"
     ],
     "challenge": "Design an engaging school magazine that showcases student achievements, school activities, and educational content while maintaining professional quality and visual appeal.",
     "solution": "Created a vibrant, well-organized magazine with dynamic layouts, student-friendly design, clear content sections, and professional production quality that celebrates school community.",
@@ -1036,7 +1035,7 @@
       "Interactive Learning",
       "Financial Education"
     ],
-    "thumbnail": "/canada-credit-score-thumbnail.jpg",
+    "thumbnail": "/new-to-canada.png",
     "images": [
       "/canada-credit-score-intro.jpg",
       "/canada-credit-score-modules.jpg",
@@ -1072,7 +1071,7 @@
       "Interactive Scenarios",
       "Compliance Training"
     ],
-    "thumbnail": "/info-security-thumbnail.jpg",
+    "thumbnail": "/information-security-guide.png",
     "images": [
       "/info-security-intro.jpg",
       "/info-security-scenarios.jpg",
@@ -1108,7 +1107,7 @@
       "Process Documentation",
       "Technical Training"
     ],
-    "thumbnail": "/sany-elearning-thumbnail.jpg",
+    "thumbnail": "/sany-trucks-commercial.png",
     "images": [
       "/sany-elearning-overview.jpg",
       "/sany-elearning-processes.jpg",
