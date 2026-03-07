@@ -25,6 +25,7 @@
       "/masaha-360-campaign-Artboard-90.jpg",
       "/masaha-360-campaign-Artboard-100.jpg"
     ],
+    "pdfUrl": "/masaha_360_campaign_pdf.pdf",
     "challenge": "Create a compelling brand campaign for Masaha 360 that effectively communicates their equipment rental services while establishing a strong market presence in the industrial sector.",
     "solution": "Developed a comprehensive brand campaign with cohesive visual identity, marketing collateral, and digital assets that position Masaha 360 as a trusted leader in equipment rental services.",
     "process": [
@@ -75,6 +76,7 @@
       "/images/perpetual-blessings-11.jpg",
       "/images/perpetual-blessings-12.jpg"
     ],
+    "pdfUrl": "/perpetual_blessings_pdf.pdf",
     "challenge": "Design a meaningful brand identity for Perpetual Blessings that reflects their mission and values while creating a memorable and versatile visual system.",
     "solution": "Created a thoughtful brand identity with a distinctive logo, harmonious color palette, and comprehensive brand guidelines that ensure consistency across all applications.",
     "process": [
@@ -301,6 +303,34 @@
       "role": "Client"
     }
   },
+
+  {
+    "id": "koc-interactive-pdf",
+    "title": "KOC Interactive PDF (نسخة تفاعلية)",
+    "category": "presentations",
+    "description": "Kuwait Oil Company, Interactive PDF",
+    "client": "Kuwait Oil Company",
+    "year": "2024",
+    "services": [],
+    "thumbnail": "/koc_thumbnail.png",
+    "images": [
+      "/koc_thumbnail.png",
+      "/koc_image_1.png",
+      "/koc_image_2.png",
+      "/koc_image_3.png"
+    ],
+    "challenge": "Design an interactive PDF for Kuwait Oil Company that effectively communicates complex information in an engaging, user-friendly format while adhering to corporate branding standards.",
+    "solution": "Created a visually appealing interactive PDF with intuitive navigation, engaging visuals, and clear information hierarchy that allows users to easily access and understand the content while maintaining brand consistency.",
+    "process": [
+      "Content Analysis - Organized information for interactive format",
+      "Design Development - Created engaging visuals and layout",
+      "Interactivity - Implemented navigation and interactive elements",
+      "Brand Integration - Ensured adherence to KOC branding guidelines",
+      "Testing & Optimization - Tested functionality and optimized user experience"
+    ],
+    "results": "The interactive PDF successfully enhanced user engagement and comprehension of complex information, becoming a valuable communication tool for Kuwait Oil Company.",
+    "tools": []
+  },
   {
     "id": "masaha-company-profile",
     "title": "Company Profile – Masaha Global",
@@ -320,6 +350,7 @@
       "/masaha-company-profile-spreads.jpg",
       "/masaha-company-profile-details.jpg"
     ],
+    "pdfUrl": "/masaha_company_profile_pdf.pdf",
     "challenge": "Design a comprehensive company profile that effectively presents Masaha Global's extensive services, capabilities, and market leadership in the equipment rental industry.",
     "solution": "Created a professional, well-structured company profile with clear information hierarchy, engaging layouts, and high-quality imagery that showcases Masaha Global's expertise and market position.",
     "process": [
@@ -335,6 +366,34 @@
       "quote": "The company profile perfectly represents our brand and capabilities. It's been instrumental in winning new business.",
       "author": "Masaha Global Team",
       "role": "Client"
+    }
+  },
+
+  {
+    "id": "masaha-hse",
+    "title": "Masaha HSE",
+    "category": "presentations",
+    "description": "Masaha equipment company HSE department",
+    "client": "Masaha Global",
+    "year": "2024",
+    "services": [
+      "Company Profile Design",
+      "Layout Design",
+      "Print Production",
+      "Content Organization"
+    ],
+    "thumbnail": "/masaha_hse.png",
+    "images": ["/masaha_hse.png"],
+    "pdfUrl": "/MASAHA-HSE.pdf",
+    "challenge": "",
+    "solution": "",
+    "process": [],
+    "results": "",
+    "tools": ["Adobe InDesign", "Adobe Illustrator", "Adobe Photoshop"],
+    "testimonial": {
+      "quote": "",
+      "author": "",
+      "role": ""
     }
   },
   {
@@ -355,6 +414,7 @@
       "/masaha-rental-brochure-cover.jpg",
       "/masaha-rental-brochure-equipment.jpg"
     ],
+    "pdfUrl": "/masaha_rental_pdf.pdf",
     "challenge": "Design an informative rental equipment brochure that clearly presents Masaha's extensive inventory while maintaining visual appeal and easy navigation for potential clients.",
     "solution": "Developed a well-organized brochure with clear equipment categories, detailed specifications, high-quality product images, and intuitive layout that helps clients quickly find the equipment they need.",
     "process": [
@@ -450,6 +510,7 @@
       "/al-waha-school-2.png",
       "/al-waha-school-3.png"
     ],
+    "pdfUrl": "/Al_Waha_pdf.pdf",
     "challenge": "Design an engaging school magazine that showcases student achievements, school activities, and educational content while maintaining professional quality and visual appeal.",
     "solution": "Created a vibrant, well-organized magazine with dynamic layouts, student-friendly design, clear content sections, and professional production quality that celebrates school community.",
     "process": [
@@ -1130,6 +1191,43 @@
     "services": ["Course Design", "Interactive Elements", "LMS Integration"],
     "thumbnail": "/placeholder.svg",
     "images": ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    "challenge": "Design an engaging online course that maintains learner attention, facilitates knowledge retention, and provides interactive learning experiences for a diverse audience of adult learners.",
+    "solution": "Created a comprehensive eLearning course using Articulate Rise with interactive elements, knowledge checks, scenario-based learning, and multimedia content. Designed for mobile-responsive learning with clear navigation and progress tracking.",
+    "process": [
+      "Learning Objectives - Defined clear learning outcomes and assessments",
+      "Content Structure - Organized modules and lesson flow",
+      "Interactive Design - Created quizzes, scenarios, and activities",
+      "Multimedia Integration - Added videos, graphics, and audio",
+      "LMS Integration - Configured tracking and reporting features"
+    ],
+    "results": "The course achieved 92% completion rate (vs. 45% industry average), 4.8/5 learner satisfaction score, and demonstrated measurable knowledge improvement through assessments.",
+    "tools": [
+      "Articulate Rise",
+      "Articulate Storyline",
+      "Adobe Captivate",
+      "Camtasia"
+    ],
+    "testimonial": {
+      "quote": "The course design is exceptional. Our learners are more engaged than ever and the completion rates speak for themselves.",
+      "author": "Dr. Robert Williams",
+      "role": "Director of Learning, Education Platform"
+    }
+  },
+  {
+    "id": "photography",
+    "title": "Phototography",
+    "category": "",
+    "description": "Interactive eLearning course design with Articulate Rise",
+    "client": "Education Platform",
+    "year": "2024",
+    "services": ["Course Design", "Interactive Elements"],
+    "thumbnail": "/placeholder.svg",
+    "images": [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/2025-calendar-cover.jpg"
+    ],
     "challenge": "Design an engaging online course that maintains learner attention, facilitates knowledge retention, and provides interactive learning experiences for a diverse audience of adult learners.",
     "solution": "Created a comprehensive eLearning course using Articulate Rise with interactive elements, knowledge checks, scenario-based learning, and multimedia content. Designed for mobile-responsive learning with clear navigation and progress tracking.",
     "process": [
