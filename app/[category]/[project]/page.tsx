@@ -152,7 +152,7 @@ export default function ProjectDetailPage({
         <section className="py-12 lg:py-20 bg-white">
           <div className="container">
             <h2 className="text-3xl lg:text-4xl font-semibold text-black-100 mb-8 font-bricolage">
-              View Calendar
+              View {project.title} PDF
             </h2>
             <div className="max-w-5xl mx-auto">
               <div className="bg-background rounded-2xl border border-[#e5e5e5] overflow-hidden shadow-lg">
